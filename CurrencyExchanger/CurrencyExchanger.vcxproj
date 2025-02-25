@@ -156,6 +156,15 @@
   <ItemGroup>
     <ClCompile Include="CurrencyExchanger.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libs.h" />
+    <ClInclude Include="libs\date.h" />
+    <ClInclude Include="libs\inputs.h" />
+    <ClInclude Include="libs\strUtils.h" />
+    <ClInclude Include="libs\utility.h" />
+    <ClInclude Include="libs\WindowsConsoleTheme.h" />
+    <ClInclude Include="libs\WindowsConsoleUtilities.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
