@@ -157,6 +157,7 @@
     <ClCompile Include="CurrencyExchanger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="currency.h" />
     <ClInclude Include="libs.h" />
     <ClInclude Include="libs\date.h" />
     <ClInclude Include="libs\inputs.h" />

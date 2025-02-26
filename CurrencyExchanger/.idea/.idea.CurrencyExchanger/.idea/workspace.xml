@@ -8,23 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ef7ab34-85dc-4b80-8eef-d42817e733c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/CL.command.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/CL.read.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/CL.write.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/Cl.items.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/CurrencyExchanger.lastbuildstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/link.command.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/link.read.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/link.secondary.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/Currency.8B0FA948.tlog/link.write.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/CurrencyExchanger.exe.recipe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/CurrencyExchanger.ilk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/CurrencyExchanger.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/vc143.idb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Currency.8B0FA948/x64/Debug/vc143.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currencies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x64/Debug/CurrencyExchanger.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x64/Debug/CurrencyExchanger.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyExchanger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurrencyExchanger/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchanger.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchanger.vcxproj" afterDir="false" />
     </list>
@@ -39,9 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2tYI02eMrhMA0GJeNrpMUemFjXC" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -96,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740522357027</updated>
       <workItem from="1740522361638" duration="2358000" />
-      <workItem from="1740558321350" duration="3227000" />
+      <workItem from="1740558321350" duration="8659000" />
     </task>
     <servers />
   </component>
