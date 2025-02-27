@@ -10,7 +10,21 @@ class currency
     std::string _state, _code, _name;
     float _rate;
 
+    static const std::string _currencyDataFile;
     static const std::string _delim;
+
+    class errors
+    {
+        static void logError(const std::string& errorMsg) noexcept
+        {
+            std::cerr << dye::red << errorMsg << '\n';
+        }
+    public:
+        static void logCurrencyDataFileNotOpen()
+        {
+            logError("ERROR: Failed to open the currency data file (`" + _currencyDataFile + "`).");
+        }
+    };
 
     std::vector<std::string> _currencyDetails() const noexcept
     {
@@ -45,6 +59,64 @@ class currency
 
         return currencyDetailsLine;
     }
+
+    // TODO: Use a single, global STL vector to store currency data.
+    
+    static std::vector<currency> _loadCurrencies()
+    {
+        auto allCurrencies = std::vector<currency>();
+
+        std::fstream file(_currencyDataFile, std::ios::in);
+
+        if (file.is_open())
+        {
+            auto currentLine = std::string();
+
+            while (std::getline(file, currentLine))
+                allCurrencies.push_back(currency(currentLine));
+
+            file.close();
+        }
+        else
+            errors::logCurrencyDataFileNotOpen();
+        
+        return allCurrencies;
+    }
+    static void _saveCurrencies(const std::vector<currency>& currencies)
+    {
+        std::fstream file(_currencyDataFile, std::ios::out);
+
+        if (file.is_open())
+        {
+            for (const currency& currency_ : currencies)
+                file << currency_._currencyDetailsLine() << '\n';
+
+            file.close();
+        }
+        else
+            errors::logCurrencyDataFileNotOpen();
+    }
+
+    void _update() const
+    {
+        std::vector<currency> allCurrencies = _loadCurrencies();
+        
+        const currency thisCurrency = *this;
+
+        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
+        
+        for (currency& currency_ : allCurrencies)
+        {
+            if (thisCurrency == currency_)
+            {
+                currency_ = thisCurrency;
+                break;
+            }
+        }
+
+        _saveCurrencies(allCurrencies);
+    }
+    
 public:
     currency(const mode mode, std::string state, std::string currencyCode, std::string currencyName, const float exchangeRate) : _mode(mode), _state(std::move(state)), _code(std::move(currencyCode)), _name(std::move(currencyName)), _rate(exchangeRate) {}
     
@@ -87,6 +159,17 @@ public:
     {
         return strUtils::string(_rate);
     }
+
+    static std::vector<currency> allCurrencies()
+    {
+        return _loadCurrencies();
+    }
+
+    bool operator==(const currency& other) const noexcept
+    {
+        return (_code == other._code);
+    }
 };
 
+const std::string currency::_currencyDataFile = "data/currency-list.txt";
 const std::string currency::_delim = "#//#";

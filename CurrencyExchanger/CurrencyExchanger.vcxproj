@@ -160,6 +160,7 @@
     <ClInclude Include="currency.h" />
     <ClInclude Include="libs.h" />
     <ClInclude Include="libs\date.h" />
+    <ClInclude Include="libs\dye.hpp" />
     <ClInclude Include="libs\inputs.h" />
     <ClInclude Include="libs\strUtils.h" />
     <ClInclude Include="libs\utility.h" />
