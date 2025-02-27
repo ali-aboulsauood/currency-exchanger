@@ -26,6 +26,8 @@ class currency
         }
     };
 
+    currency() : _mode(empty), _state(std::string()), _code(std::string()), _name(std::string()), _rate(0.f) {};
+
     std::vector<std::string> _currencyDetails() const noexcept
     {
         return { _state, _code, _name, strExchangeRate() };
@@ -145,7 +147,7 @@ public:
     }
     void setExchangeRate(const float exchangeRate)
     {
-        // TODO: Validate the exchange rate
+        // TODO: Validate the exchange rate.
         
         _rate = exchangeRate;
 
@@ -168,6 +170,49 @@ public:
     bool operator==(const currency& other) const noexcept
     {
         return (_code == other._code);
+    }
+
+    static currency getCurrencyByState(const std::string& state) noexcept
+    {
+        const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
+        
+        for (const currency& currency_ : allCurrencies)
+        {
+            if (currency_._state == state)
+                return currency_;
+        }
+
+        return {};
+    }
+    static currency getCurrencyByCode(const std::string& code) noexcept
+    {
+        const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
+        
+        for (const currency& currency_ : allCurrencies)
+        {
+            if (currency_._code == code)
+                return currency_;
+        }
+
+        return {};
+    }
+    static currency getCurrencyByName(const std::string& name) noexcept
+    {
+        const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
+        
+        for (const currency& currency_ : allCurrencies)
+        {
+            if (currency_._name == name)
+                return currency_;
+        }
+
+        return {};
     }
 };
 
