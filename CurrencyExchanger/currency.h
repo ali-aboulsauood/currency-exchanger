@@ -61,8 +61,6 @@ class currency
 
         return currencyDetailsLine;
     }
-
-    // TODO: Use a single, global STL vector to store currency data.
     
     static std::vector<currency> _loadCurrencies()
     {
@@ -104,8 +102,6 @@ class currency
         std::vector<currency> allCurrencies = _loadCurrencies();
         
         const currency thisCurrency = *this;
-
-        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
         
         for (currency& currency_ : allCurrencies)
         {
@@ -147,8 +143,6 @@ public:
     }
     void setExchangeRate(const float exchangeRate)
     {
-        // TODO: Validate the exchange rate.
-        
         _rate = exchangeRate;
 
         // Records the modified currency object to the currency data file (`data\currency-list.txt`)
@@ -175,8 +169,6 @@ public:
     static currency getCurrencyByState(const std::string& state) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
-
-        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
         
         for (const currency& currency_ : allCurrencies)
         {
@@ -189,8 +181,6 @@ public:
     static currency getCurrencyByCode(const std::string& code) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
-
-        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
         
         for (const currency& currency_ : allCurrencies)
         {
@@ -203,8 +193,6 @@ public:
     static currency getCurrencyByName(const std::string& name) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
-
-        // TODO: Replace the following `for` iteration statement with C++ STL algorithm function calls.
         
         for (const currency& currency_ : allCurrencies)
         {
