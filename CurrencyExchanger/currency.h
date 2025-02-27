@@ -127,14 +127,23 @@ public:
     {
         return _state;
     }
+    std::string stateLowerCase() const noexcept
+    {
+        return strUtils::to_lower(_state);
+    }
     
     std::string code() const noexcept
     {
         return _code;
     }
+    
     std::string name() const noexcept
     {
         return _name;
+    }
+    std::string nameLowerCase() const noexcept
+    {
+        return strUtils::to_lower(_name);
     }
 
     float exchangeRate() const noexcept
@@ -169,10 +178,12 @@ public:
     static currency getCurrencyByState(const std::string& state) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        const std::string stateLowerCase = strUtils::to_lower(state);
         
         for (const currency& currency_ : allCurrencies)
         {
-            if (currency_._state == state)
+            if (currency_.stateLowerCase() == stateLowerCase)
                 return currency_;
         }
 
@@ -181,10 +192,12 @@ public:
     static currency getCurrencyByCode(const std::string& code) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        const std::string codeUpperCase = strUtils::to_upper(code);
         
         for (const currency& currency_ : allCurrencies)
         {
-            if (currency_._code == code)
+            if (currency_._code == codeUpperCase)
                 return currency_;
         }
 
@@ -193,10 +206,12 @@ public:
     static currency getCurrencyByName(const std::string& name) noexcept
     {
         const std::vector<currency> allCurrencies = _loadCurrencies();
+
+        const std::string& nameLowerCase = strUtils::to_lower(name);
         
         for (const currency& currency_ : allCurrencies)
         {
-            if (currency_._name == name)
+            if (currency_.nameLowerCase() == nameLowerCase)
                 return currency_;
         }
 
