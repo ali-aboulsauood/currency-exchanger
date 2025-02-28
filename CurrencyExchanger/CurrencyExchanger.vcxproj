@@ -165,6 +165,7 @@
     <ClInclude Include="libs\WindowsConsoleTheme.h" />
     <ClInclude Include="libs\WindowsConsoleUtilities.h" />
     <ClInclude Include="ui\mainMenuScreen.h" />
+    <ClInclude Include="ui\mainMenuScreen\listCurrenciesScreen.h" />
     <ClInclude Include="ui\menu.h" />
     <ClInclude Include="ui\screen.h" />
   </ItemGroup>
