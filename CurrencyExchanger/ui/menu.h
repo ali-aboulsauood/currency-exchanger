@@ -1,6 +1,5 @@
 ﻿#pragma once
 
-#include "../currency.h"
 #include "screen.h"
 
 #include "../libs.h"
