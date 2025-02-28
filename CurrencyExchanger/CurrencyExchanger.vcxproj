@@ -166,6 +166,7 @@
     <ClInclude Include="libs\utility.h" />
     <ClInclude Include="libs\WindowsConsoleTheme.h" />
     <ClInclude Include="libs\WindowsConsoleUtilities.h" />
+    <ClInclude Include="ui\screen.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\currency-list.txt" />
