@@ -17,7 +17,7 @@ class currency
     {
         static void logError(const std::string& errorMsg) noexcept
         {
-            std::cerr << dye::red << errorMsg << '\n';
+            std::cerr << errorMsg << '\n';
         }
     public:
         static void logCurrencyDataFileNotOpen()

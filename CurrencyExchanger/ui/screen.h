@@ -17,6 +17,8 @@ protected:
 
     static void _renderScreenHeader(const std::string& screenTitle, const std::string& screenSubtitle = std::string(), const bool centerSubtitle = true) noexcept
     {
+        WindowsConsole::setTheme(defaultTheme);
+        
         WindowsConsole::clear();
 
         std::cout << '\n';
@@ -71,7 +73,7 @@ public:
     }
 };
 
-const WindowsConsoleTheme screen::defaultTheme = WindowsConsoleThemes::LightBlueBright;
+const WindowsConsoleTheme screen::defaultTheme = WindowsConsoleThemes::LightBlue;
 
 const std::string screen::h_sep = strUtils::string("-", width);
 

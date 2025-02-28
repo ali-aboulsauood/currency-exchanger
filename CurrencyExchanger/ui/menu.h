@@ -2,9 +2,7 @@
 
 #include "screen.h"
 
-#include "../libs.h"
-
-class menu : public screen
+class menu : protected screen
 {
 protected:
     static const std::pair<std::string, std::string> braces;
@@ -35,4 +33,4 @@ public:
     menu() = delete;
 };
 
-const std::pair<std::string, std::string> braces = { "[", "]" };
+const std::pair<std::string, std::string> menu::braces = { "[", "]" };
