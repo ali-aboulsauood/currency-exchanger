@@ -9,11 +9,12 @@ class findCurrencyScreen : protected menu
 public:
     findCurrencyScreen() = delete;
 
-    static void display()
+    static currency display()
     {
         bool find = true;
 
         const std::vector<currency> currencies = currency::allCurrencies();
+        auto requestedCurrency = currency();
 
         while (find)
         {
@@ -23,7 +24,7 @@ public:
 
                 _renderScreenHeader(_title, _subtitle);
 
-                return;
+                return requestedCurrency;
             }
 
             _subtitle = "Find Currency by...";
@@ -38,7 +39,7 @@ public:
             const size_t chosenMenuItem = _getMenuItem(menuItems);
 
             if (chosenMenuItem == menuItems.size())
-                return;
+                return requestedCurrency;
 
             const std::string& chosenProperty = strUtils::to_lower(strUtils::r_trim(menuItems.at(chosenMenuItem - 1), "."));
             
@@ -50,8 +51,6 @@ public:
             std::cout << '\n';
 
             const std::string searchTerm = inputs::ConsoleIn<std::string>(prompt(), error_prompt);
-
-            auto requestedCurrency = currency();
             
             switch (chosenMenuItem)
             {
@@ -82,6 +81,8 @@ public:
 
             find = inputs::ConsoleIn_YN("Do you wish to find another currency?");
         }
+
+        return requestedCurrency;
     }
 };
 

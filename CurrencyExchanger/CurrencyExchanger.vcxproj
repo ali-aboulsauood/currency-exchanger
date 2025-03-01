@@ -167,6 +167,7 @@
     <ClInclude Include="ui\mainMenuScreen.h" />
     <ClInclude Include="ui\mainMenuScreen\findCurrencyScreen.h" />
     <ClInclude Include="ui\mainMenuScreen\listCurrenciesScreen.h" />
+    <ClInclude Include="ui\mainMenuScreen\updateCurrencyExchangeRateScreen.h" />
     <ClInclude Include="ui\menu.h" />
     <ClInclude Include="ui\screen.h" />
   </ItemGroup>

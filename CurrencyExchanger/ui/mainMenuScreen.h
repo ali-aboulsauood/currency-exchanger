@@ -2,6 +2,7 @@
 
 #include "ui/mainMenuScreen/listCurrenciesScreen.h"
 #include "ui/mainMenuScreen/findCurrencyScreen.h"
+#include "ui/mainMenuScreen/updateCurrencyExchangeRateScreen.h"
 
 #include "menu.h"
 
@@ -39,7 +40,7 @@ class mainMenuScreen : protected menu
     }
     static void _displayUpdateCurrencyExchangeRate() noexcept
     {
-        // updateCurrencyRate::display();
+        updateCurrencyExchangeRateScreen::display();
 
         std::cout << '\n';
 
