@@ -169,6 +169,10 @@ public:
     {
         return _loadCurrencies();
     }
+    static bool hasCurrencies() noexcept
+    {
+        return !allCurrencies().empty();
+    }
 
     bool operator==(const currency& other) const noexcept
     {
@@ -218,7 +222,7 @@ public:
         return {};
     }
 
-    float convert(const float amount, const currency& toCurrency) noexcept
+    float convert(const float amount, const currency& toCurrency) const noexcept
     {
         return amount * (toCurrency._rate / _rate);
     }

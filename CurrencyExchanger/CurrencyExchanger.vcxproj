@@ -165,6 +165,7 @@
     <ClInclude Include="libs\WindowsConsoleTheme.h" />
     <ClInclude Include="libs\WindowsConsoleUtilities.h" />
     <ClInclude Include="ui\mainMenuScreen.h" />
+    <ClInclude Include="ui\mainMenuScreen\currencyConverterScreen.h" />
     <ClInclude Include="ui\mainMenuScreen\findCurrencyScreen.h" />
     <ClInclude Include="ui\mainMenuScreen\listCurrenciesScreen.h" />
     <ClInclude Include="ui\mainMenuScreen\updateCurrencyExchangeRateScreen.h" />

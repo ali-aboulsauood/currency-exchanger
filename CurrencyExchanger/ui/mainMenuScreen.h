@@ -1,8 +1,9 @@
 ﻿#pragma once
 
-#include "ui/mainMenuScreen/listCurrenciesScreen.h"
-#include "ui/mainMenuScreen/findCurrencyScreen.h"
-#include "ui/mainMenuScreen/updateCurrencyExchangeRateScreen.h"
+#include "mainMenuScreen/listCurrenciesScreen.h"
+#include "mainMenuScreen/findCurrencyScreen.h"
+#include "mainMenuScreen/updateCurrencyExchangeRateScreen.h"
+#include "mainMenuScreen/currencyConverterScreen.h"
 
 #include "menu.h"
 
@@ -46,9 +47,9 @@ class mainMenuScreen : protected menu
 
         _returnToMainMenu();
     }
-    static void _displayCurrencyCalculator() noexcept
+    static void _displayCurrencyConverter() noexcept
     {
-        // currencyCalculator::display();
+        currencyConverterScreen::display();
 
         std::cout << '\n';
 
@@ -76,7 +77,7 @@ class mainMenuScreen : protected menu
 
             return;
         case 4:
-            _displayCurrencyCalculator();
+            _displayCurrencyConverter();
 
             return;
         case 5:
