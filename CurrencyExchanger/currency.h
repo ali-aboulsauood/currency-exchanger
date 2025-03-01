@@ -217,6 +217,11 @@ public:
 
         return {};
     }
+
+    float convert(const float amount, const currency& toCurrency) noexcept
+    {
+        return amount * (toCurrency._rate / _rate);
+    }
 };
 
 const std::string currency::_currencyDataFile = "data/currency-list.txt";
