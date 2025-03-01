@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "ui/mainMenuScreen/listCurrenciesScreen.h"
+#include "ui/mainMenuScreen/findCurrencyScreen.h"
 
 #include "menu.h"
 
@@ -30,7 +31,7 @@ class mainMenuScreen : protected menu
     }
     static void _displayFindCurrency() noexcept
     {
-        // findCurrency::display();
+        findCurrencyScreen::display();
 
         std::cout << '\n';
 

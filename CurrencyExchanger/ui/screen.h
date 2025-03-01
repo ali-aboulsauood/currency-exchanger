@@ -57,7 +57,7 @@ public:
             {"Exchange Rate (USD 1)", currency_.strExchangeRate()}
         };
 
-        std::cout << "Information regarding " << currency_.name() << '(' << currency_.code() << ')' << ':' << '\n';
+        std::cout << "Information regarding " << currency_.name() << ' ' << '(' << currency_.code() << ')' << ':' << '\n';
 
         std::cout << '\n';
 

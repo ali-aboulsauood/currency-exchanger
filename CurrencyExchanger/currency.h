@@ -26,8 +26,6 @@ class currency
         }
     };
 
-    currency() : _mode(empty), _state(std::string()), _code(std::string()), _name(std::string()), _rate(0.f) {};
-
     std::vector<std::string> _currencyDetails() const noexcept
     {
         return { _state, _code, _name, strExchangeRate() };
@@ -116,6 +114,8 @@ class currency
     }
     
 public:
+    currency() : _mode(empty), _state(std::string()), _code(std::string()), _name(std::string()), _rate(0.f) {}
+    
     currency(const mode mode, std::string state, std::string currencyCode, std::string currencyName, const float exchangeRate) : _mode(mode), _state(std::move(state)), _code(std::move(currencyCode)), _name(std::move(currencyName)), _rate(exchangeRate) {}
     
     bool isEmpty() const noexcept
