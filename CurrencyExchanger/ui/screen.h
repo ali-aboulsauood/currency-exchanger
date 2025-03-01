@@ -73,7 +73,7 @@ public:
     }
 };
 
-const WindowsConsoleTheme screen::defaultTheme = WindowsConsoleThemes::LightBlue;
+const WindowsConsoleTheme screen::defaultTheme = WindowsConsoleThemes::BlueBright;
 
 const std::string screen::h_sep = strUtils::string("-", width);
 
