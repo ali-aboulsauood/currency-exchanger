@@ -43,7 +43,7 @@ China#//#CNY#//#Chinese Renminbi#//#6.940000
 Colombia#//#COP#//#Colombian Peso#//#4795.000000
 Comoros#//#KMF#//#Comoros Franc#//#461.552002
 Congo#//#XAF#//#CFA Franc#//#615.401978
-"Congo, Dem. Rep."#//#CDF#//#"Congo Franc, Dem. Rep.of"#//#1987.068970
+"Congo, Dem. Rep."#//#CDF#//#"Congo Franc, Dem. Rep. of"#//#1987.068970
 Cook Islands#//#NZD#//#New Zealand Dollar#//#1.535000
 Costa Rica#//#CRC#//#Costa Rica Colon#//#580.880005
 Cote d'Ivoire#//#XOF#//#CFA Franc#//#615.401978
@@ -84,17 +84,17 @@ Guatemala#//#GTQ#//#Guatemala Quetzal(es)#//#7.870000
 Guinea#//#GNF#//#Guinean Franc#//#8543.030273
 Guinea-Bissau#//#XOF#//#CFA Franc#//#615.401978
 Guyana#//#GYD#//#Guyana Dollar#//#208.399994
-Haiti#//#HTG#//#Haiti Gourde#//#141.740005
+Haiti#//#HTG#//#Haitian Gourde#//#141.740005
 Honduras#//#HNL#//#Honduras Lempira#//#24.478001
-Hong Kong#//#HKD#//#HongKong Dollar#//#7.773000
-Hungary#//#HUF#//#Hungary Forint#//#383.959991
+Hong Kong#//#HKD#//#Hong Kong Dollar#//#7.773000
+Hungary#//#HUF#//#Hungarian Forint#//#383.959991
 Iceland#//#ISK#//#Iceland Krona#//#141.669998
 India#//#INR#//#Indian Rupee#//#82.800003
 Indonesia#//#IDR#//#Indonesia Rupiah#//#15655.000000
 Iran#//#IRR#//#Iranian Rial#//#286676.000000
 Iraq#//#IQD#//#Iraqi Dinar#//#1450.000000
 Ireland#//#EUR#//#Euro#//#0.938000
-Israel#//#ILS#//#Israel Shekel#//#3.389000
+Israel#//#ILS#//#Israeli Shekel#//#3.389000
 Italy#//#EUR#//#Euro#//#0.938000
 Jamaica#//#JMD#//#Jamaican Dollar#//#153.470001
 Japan#//#JPY#//#Japanese Yen#//#134.869995
@@ -166,12 +166,12 @@ Reunion#//#EUR#//#Euro#//#0.938000
 Romania#//#RON#//#Romanian Leu#//#4.623000
 Russian Federation#//#RUB#//#Russian Rouble#//#63.136002
 Rwanda#//#RWF#//#Rwanda Franc#//#1051.220947
-Saint Helena#//#SHP#//#St.Helena Pound#//#0.804000
+Saint Helena#//#SHP#//#St. Helena Pound#//#0.804000
 Saint Kitts and Nevis#//#XCD#//#E.C. Dollar#//#2.700000
 Saint Lucia#//#XCD#//#E.C. Dollar#//#2.700000
 Samoa#//#WST#//#Samoa Tala#//#2.674000
 San Marino#//#EUR#//#Euro#//#0.938000
-Sao Tome and Principe#//#STN#//#Sao Tome Principe Dobra#//#23.299000
+Sao Tome and Principe#//#STN#//#Sao Tome and Principe Dobra#//#23.299000
 Saudi Arabia#//#SAR#//#Saudi Riyal#//#3.759000
 Senegal#//#XOF#//#CFA Franc#//#615.401978
 Serbia#//#RSD#//#Serbian Dinar#//#110.027000
@@ -180,7 +180,7 @@ Sierra Leone#//#SLE#//#Sierra Leone Leone#//#18.450001
 Singapore#//#SGD#//#Singapore Dollar#//#1.344000
 Slovakia#//#EUR#//#Euro#//#0.938000
 Slovenia#//#EUR#//#Euro#//#0.938000
-Solomon Islands#//#SBD#//#Solomon Is. Dollar#//#8.157000
+Solomon Islands#//#SBD#//#Solomon Islands Dollar#//#8.157000
 Somalia#//#SOS#//#Somali Shilling#//#24300.000000
 South Africa#//#ZAR#//#South Africa Rand#//#17.351000
 South Sudan#//#SSP#//#South Sudanese Pound#//#663.320007
